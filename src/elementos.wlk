@@ -3,7 +3,7 @@ import plagas.*
 class Hogar {
 	var property nivelDeMugre
 	var property confortOfrecido
-	method esBueno() = self.nivelDeMugre() <= self.confortOfrecido() / 2
+	method esBueno() = nivelDeMugre <= confortOfrecido / 2
 	method ataqueDePlaga(plaga) { 
 		nivelDeMugre += plaga.nivelDeDanio()
 		plaga.efectoDePlaga()
